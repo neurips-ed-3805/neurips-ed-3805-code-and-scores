@@ -1,0 +1,45 @@
+judge,dataset,max_delta_abs_d,mean_delta_abs_d,n_flips
+Gemma-2-9B,SummEval,0.6,0.17,0
+Gemma-3-27B,SummEval,1.95,0.3,3
+Qwen3-4B,SummEval,1.5,0.32,1
+Mistral-7B,SummEval,0.56,0.17,0
+LLaMA-3.1-8B,SummEval,2.32,0.39,0
+LLaMA-3.1-70B,SummEval,4.69,0.32,0
+Gemini-2.0-Flash,SummEval,1.25,0.3,7
+Gemini-3-Flash,SummEval,4.69,0.64,42
+Gemini-3.1-Pro,SummEval,4.54,0.8,15
+GPT-5.4,SummEval,1.06,0.23,0
+Claude Opus 4.7,SummEval,1.02,0.24,0
+Gemma-2-9B,Newsroom,1.7,0.39,0
+Gemma-3-27B,Newsroom,1.86,0.47,1
+Qwen3-4B,Newsroom,1.28,0.37,2
+Mistral-7B,Newsroom,1.66,0.34,0
+LLaMA-3.1-8B,Newsroom,1.89,0.51,0
+LLaMA-3.1-70B,Newsroom,2.21,0.46,0
+Gemini-2.0-Flash,Newsroom,1.91,0.58,3
+Gemini-3-Flash,Newsroom,4.54,0.93,6
+Gemini-3.1-Pro,Newsroom,4.23,0.75,3
+GPT-5.4,Newsroom,1.42,0.45,0
+Claude Opus 4.7,Newsroom,1.39,0.4,0
+Gemma-2-9B,Topical Chat,0.51,0.2,0
+Gemma-3-27B,Topical Chat,0.94,0.27,0
+Qwen3-4B,Topical Chat,0.5,0.21,0
+Mistral-7B,Topical Chat,1.07,0.24,0
+LLaMA-3.1-8B,Topical Chat,1.38,0.49,0
+LLaMA-3.1-70B,Topical Chat,0.94,0.31,0
+Gemini-2.0-Flash,Topical Chat,0.81,0.34,0
+Gemini-3-Flash,Topical Chat,2.56,0.72,1
+Gemini-3.1-Pro,Topical Chat,5.0,1.02,6
+GPT-5.4,Topical Chat,0.61,0.21,0
+Claude Opus 4.7,Topical Chat,1.34,0.37,0
+Gemma-2-9B,WP-A,0.31,0.22,0
+Gemma-3-27B,WP-A,0.99,0.52,0
+Qwen3-4B,WP-A,0.21,0.14,0
+Mistral-7B,WP-A,0.37,0.2,0
+LLaMA-3.1-8B,WP-A,0.42,0.26,0
+LLaMA-3.1-70B,WP-A,0.75,0.54,0
+Gemini-2.0-Flash,WP-A,1.89,0.97,0
+Gemini-3-Flash,WP-A,2.49,1.61,1
+Gemini-3.1-Pro,WP-A,0.95,0.63,0
+GPT-5.4,WP-A,0.89,0.58,0
+Claude Opus 4.7,WP-A,1.84,0.89,0

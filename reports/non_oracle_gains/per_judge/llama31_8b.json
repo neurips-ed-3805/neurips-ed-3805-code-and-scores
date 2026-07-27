@@ -1,0 +1,1910 @@
+{
+  "judge": "llama31_8b",
+  "B": 1000,
+  "seed": 42,
+  "datasets": {
+    "summeval": {
+      "metrics": {
+        "coh": {
+          "0.1": {
+            "n_units": 100,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.4032433816679805,
+            "canon_spearman": 0.3299253529074066,
+            "delta_spearman": 0.07331802876057392,
+            "sel_kendall": 0.34498201186728555,
+            "canon_kendall": 0.2864396768728174,
+            "sel_spearman_std": 0.02873658270716305,
+            "test_oracle_regret": 0.026808139130464776,
+            "pick_canonical_rate": 0.056,
+            "pick_distribution": {
+              "0_1": 0.355,
+              "1_3": 0.089,
+              "1_5": 0.056,
+              "0_10": 0.288,
+              "0_100": 0.212
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 100,
+            "calib_size": 20,
+            "n_boot": 1000,
+            "sel_spearman": 0.4085784580862753,
+            "canon_spearman": 0.3302557931567765,
+            "delta_spearman": 0.0783226649294988,
+            "sel_kendall": 0.35018416676175196,
+            "canon_kendall": 0.286717268723081,
+            "sel_spearman_std": 0.025464725833018665,
+            "test_oracle_regret": 0.021776623636920994,
+            "pick_canonical_rate": 0.016,
+            "pick_distribution": {
+              "0_1": 0.473,
+              "1_3": 0.061,
+              "1_5": 0.016,
+              "0_10": 0.304,
+              "0_100": 0.146
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 100,
+            "calib_size": 30,
+            "n_boot": 1000,
+            "sel_spearman": 0.4123757226268897,
+            "canon_spearman": 0.32972717790356165,
+            "delta_spearman": 0.08264854472332805,
+            "sel_kendall": 0.35387342063751753,
+            "canon_kendall": 0.28628644538360926,
+            "sel_spearman_std": 0.02194126937600514,
+            "test_oracle_regret": 0.018883725796816214,
+            "pick_canonical_rate": 0.003,
+            "pick_distribution": {
+              "0_1": 0.561,
+              "1_3": 0.028,
+              "1_5": 0.003,
+              "0_10": 0.31,
+              "0_100": 0.098
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 100,
+            "calib_size": 40,
+            "n_boot": 1000,
+            "sel_spearman": 0.41352355163404503,
+            "canon_spearman": 0.32984859739117184,
+            "delta_spearman": 0.08367495424287319,
+            "sel_kendall": 0.35502979467778595,
+            "canon_kendall": 0.2864212385399004,
+            "sel_spearman_std": 0.022388552483266325,
+            "test_oracle_regret": 0.01906363478696269,
+            "pick_canonical_rate": 0.001,
+            "pick_distribution": {
+              "0_1": 0.602,
+              "1_3": 0.012,
+              "1_5": 0.001,
+              "0_10": 0.311,
+              "0_100": 0.074
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 100,
+            "calib_size": 50,
+            "n_boot": 1000,
+            "sel_spearman": 0.41449897005041253,
+            "canon_spearman": 0.32944396921858843,
+            "delta_spearman": 0.0850550008318241,
+            "sel_kendall": 0.3562731332210055,
+            "canon_kendall": 0.2860397131119015,
+            "sel_spearman_std": 0.02630633443712535,
+            "test_oracle_regret": 0.020554207507560304,
+            "pick_canonical_rate": 0.001,
+            "pick_distribution": {
+              "0_1": 0.661,
+              "1_3": 0.003,
+              "1_5": 0.001,
+              "0_10": 0.276,
+              "0_100": 0.059
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "con": {
+          "0.1": {
+            "n_units": 96,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.45213429347956563,
+            "canon_spearman": 0.4074065160063057,
+            "delta_spearman": 0.044727777473259955,
+            "sel_kendall": 0.4254484642387049,
+            "canon_kendall": 0.39048586937323787,
+            "sel_spearman_std": 0.027099373003087623,
+            "test_oracle_regret": 0.03151721656447323,
+            "pick_canonical_rate": 0.086,
+            "pick_distribution": {
+              "0_1": 0.137,
+              "1_3": 0.251,
+              "1_5": 0.086,
+              "0_10": 0.393,
+              "0_100": 0.133
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 96,
+            "calib_size": 19,
+            "n_boot": 1000,
+            "sel_spearman": 0.45757536739375515,
+            "canon_spearman": 0.4076329357800886,
+            "delta_spearman": 0.04994243161366657,
+            "sel_kendall": 0.4292184366386523,
+            "canon_kendall": 0.39070466532736176,
+            "sel_spearman_std": 0.028194946444503734,
+            "test_oracle_regret": 0.02583860954154878,
+            "pick_canonical_rate": 0.043,
+            "pick_distribution": {
+              "0_1": 0.097,
+              "1_3": 0.2,
+              "1_5": 0.043,
+              "0_10": 0.537,
+              "0_100": 0.123
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 96,
+            "calib_size": 29,
+            "n_boot": 1000,
+            "sel_spearman": 0.46201375342287704,
+            "canon_spearman": 0.4065752922856927,
+            "delta_spearman": 0.055438461137184314,
+            "sel_kendall": 0.43254481387583327,
+            "canon_kendall": 0.38971171700792545,
+            "sel_spearman_std": 0.02979907268741114,
+            "test_oracle_regret": 0.021334561979341284,
+            "pick_canonical_rate": 0.016,
+            "pick_distribution": {
+              "0_1": 0.074,
+              "1_3": 0.161,
+              "1_5": 0.016,
+              "0_10": 0.664,
+              "0_100": 0.085
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 96,
+            "calib_size": 38,
+            "n_boot": 1000,
+            "sel_spearman": 0.4658527148440983,
+            "canon_spearman": 0.4076483087927403,
+            "delta_spearman": 0.058204406051358015,
+            "sel_kendall": 0.4357393744080762,
+            "canon_kendall": 0.39077625094460006,
+            "sel_spearman_std": 0.030418066233202742,
+            "test_oracle_regret": 0.018249512725249703,
+            "pick_canonical_rate": 0.008,
+            "pick_distribution": {
+              "0_1": 0.056,
+              "1_3": 0.132,
+              "1_5": 0.008,
+              "0_10": 0.749,
+              "0_100": 0.055
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 96,
+            "calib_size": 48,
+            "n_boot": 1000,
+            "sel_spearman": 0.4697729359610528,
+            "canon_spearman": 0.4086753907626662,
+            "delta_spearman": 0.061097545198386616,
+            "sel_kendall": 0.4388826249633654,
+            "canon_kendall": 0.3917357368466691,
+            "sel_spearman_std": 0.033229426580371785,
+            "test_oracle_regret": 0.016418991297828697,
+            "pick_canonical_rate": 0.001,
+            "pick_distribution": {
+              "0_1": 0.036,
+              "1_3": 0.101,
+              "1_5": 0.001,
+              "0_10": 0.817,
+              "0_100": 0.045
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "flu": {
+          "0.1": {
+            "n_units": 98,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.2410014215690976,
+            "canon_spearman": 0.20074229569537377,
+            "delta_spearman": 0.04025912587372382,
+            "sel_kendall": 0.21539962040292332,
+            "canon_kendall": 0.17944012593162675,
+            "sel_spearman_std": 0.029719996176345197,
+            "test_oracle_regret": 0.02475549735954033,
+            "pick_canonical_rate": 0.067,
+            "pick_distribution": {
+              "0_1": 0.314,
+              "1_3": 0.027,
+              "1_5": 0.067,
+              "0_10": 0.12,
+              "0_100": 0.472
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 98,
+            "calib_size": 20,
+            "n_boot": 1000,
+            "sel_spearman": 0.24944168589088064,
+            "canon_spearman": 0.20178436646249032,
+            "delta_spearman": 0.04765731942839033,
+            "sel_kendall": 0.2230910887803913,
+            "canon_kendall": 0.18045198198628978,
+            "sel_spearman_std": 0.02413225798620579,
+            "test_oracle_regret": 0.016967589439316384,
+            "pick_canonical_rate": 0.012,
+            "pick_distribution": {
+              "0_1": 0.308,
+              "1_3": 0.006,
+              "1_5": 0.012,
+              "0_10": 0.062,
+              "0_100": 0.612
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 98,
+            "calib_size": 29,
+            "n_boot": 1000,
+            "sel_spearman": 0.25113475103017097,
+            "canon_spearman": 0.2001623729083777,
+            "delta_spearman": 0.050972378121793255,
+            "sel_kendall": 0.22463117056270746,
+            "canon_kendall": 0.17894085932144868,
+            "sel_spearman_std": 0.024589637225439293,
+            "test_oracle_regret": 0.014533462106175317,
+            "pick_canonical_rate": 0.006,
+            "pick_distribution": {
+              "0_1": 0.266,
+              "1_3": 0.001,
+              "1_5": 0.006,
+              "0_10": 0.036,
+              "0_100": 0.691
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 98,
+            "calib_size": 39,
+            "n_boot": 1000,
+            "sel_spearman": 0.25411660960207155,
+            "canon_spearman": 0.20080966203806913,
+            "delta_spearman": 0.05330694756400242,
+            "sel_kendall": 0.22742403948946496,
+            "canon_kendall": 0.1794749679071025,
+            "sel_spearman_std": 0.02595925129774173,
+            "test_oracle_regret": 0.01352945566556469,
+            "pick_canonical_rate": 0.001,
+            "pick_distribution": {
+              "0_1": 0.227,
+              "1_3": 0.0,
+              "1_5": 0.001,
+              "0_10": 0.016,
+              "0_100": 0.756
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 98,
+            "calib_size": 49,
+            "n_boot": 1000,
+            "sel_spearman": 0.2543225250039859,
+            "canon_spearman": 0.20058398453984821,
+            "delta_spearman": 0.053738540464137674,
+            "sel_kendall": 0.2276817202120002,
+            "canon_kendall": 0.17932167756775913,
+            "sel_spearman_std": 0.0305804532334682,
+            "test_oracle_regret": 0.013792132024580156,
+            "pick_canonical_rate": 0.0,
+            "pick_distribution": {
+              "0_1": 0.188,
+              "1_3": 0.0,
+              "1_5": 0.0,
+              "0_10": 0.007,
+              "0_100": 0.805
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "rel": {
+          "0.1": {
+            "n_units": 100,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.35762146576296755,
+            "canon_spearman": 0.3249075659943234,
+            "delta_spearman": 0.03271389976864414,
+            "sel_kendall": 0.311598598892982,
+            "canon_kendall": 0.2872970486767404,
+            "sel_spearman_std": 0.03667321978183391,
+            "test_oracle_regret": 0.037663646493759105,
+            "pick_canonical_rate": 0.215,
+            "pick_distribution": {
+              "0_1": 0.51,
+              "1_3": 0.035,
+              "1_5": 0.215,
+              "0_10": 0.142,
+              "0_100": 0.098
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 100,
+            "calib_size": 20,
+            "n_boot": 1000,
+            "sel_spearman": 0.36618873415572684,
+            "canon_spearman": 0.3255987974558592,
+            "delta_spearman": 0.04058993669986766,
+            "sel_kendall": 0.3188796054799332,
+            "canon_kendall": 0.28786625582741876,
+            "sel_spearman_std": 0.03962523544705796,
+            "test_oracle_regret": 0.02942641917352722,
+            "pick_canonical_rate": 0.188,
+            "pick_distribution": {
+              "0_1": 0.665,
+              "1_3": 0.006,
+              "1_5": 0.188,
+              "0_10": 0.088,
+              "0_100": 0.053
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 100,
+            "calib_size": 30,
+            "n_boot": 1000,
+            "sel_spearman": 0.37447239914341046,
+            "canon_spearman": 0.32544849798864006,
+            "delta_spearman": 0.0490239011547704,
+            "sel_kendall": 0.32587860258465623,
+            "canon_kendall": 0.28781181870737227,
+            "sel_spearman_std": 0.03856067640395229,
+            "test_oracle_regret": 0.020652252960002074,
+            "pick_canonical_rate": 0.112,
+            "pick_distribution": {
+              "0_1": 0.793,
+              "1_3": 0.002,
+              "1_5": 0.112,
+              "0_10": 0.058,
+              "0_100": 0.035
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 100,
+            "calib_size": 40,
+            "n_boot": 1000,
+            "sel_spearman": 0.38106709960818475,
+            "canon_spearman": 0.32420379180798,
+            "delta_spearman": 0.056863307800204765,
+            "sel_kendall": 0.33149286574954784,
+            "canon_kendall": 0.28666424923496303,
+            "sel_spearman_std": 0.03878106113903423,
+            "test_oracle_regret": 0.014284314570179365,
+            "pick_canonical_rate": 0.074,
+            "pick_distribution": {
+              "0_1": 0.881,
+              "1_3": 0.0,
+              "1_5": 0.074,
+              "0_10": 0.03,
+              "0_100": 0.015
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 100,
+            "calib_size": 50,
+            "n_boot": 1000,
+            "sel_spearman": 0.38682748735019673,
+            "canon_spearman": 0.32434625344802614,
+            "delta_spearman": 0.062481233902170585,
+            "sel_kendall": 0.33650641641583307,
+            "canon_kendall": 0.28680830586035816,
+            "sel_spearman_std": 0.035770558506232855,
+            "test_oracle_regret": 0.008415412002708084,
+            "pick_canonical_rate": 0.043,
+            "pick_distribution": {
+              "0_1": 0.948,
+              "1_3": 0.0,
+              "1_5": 0.043,
+              "0_10": 0.008,
+              "0_100": 0.001
+            },
+            "canonical_range": "1_5"
+          }
+        }
+      },
+      "average": {
+        "0.1": {
+          "sel_spearman": 0.3635001406199028,
+          "canon_spearman": 0.31574543265085236,
+          "delta_spearman": 0.04775470796905046,
+          "test_oracle_regret": 0.030186124887059358,
+          "pick_canonical_rate": 0.106
+        },
+        "0.2": {
+          "sel_spearman": 0.3704460613816595,
+          "canon_spearman": 0.3163179732138036,
+          "delta_spearman": 0.05412808816785586,
+          "test_oracle_regret": 0.023502310447828342,
+          "pick_canonical_rate": 0.06475
+        },
+        "0.3": {
+          "sel_spearman": 0.37499915655583704,
+          "canon_spearman": 0.31547833527156804,
+          "delta_spearman": 0.059520821284269,
+          "test_oracle_regret": 0.018851000710583724,
+          "pick_canonical_rate": 0.03425
+        },
+        "0.4": {
+          "sel_spearman": 0.3786399939220999,
+          "canon_spearman": 0.3156275900074903,
+          "delta_spearman": 0.0630124039146096,
+          "test_oracle_regret": 0.01628172943698911,
+          "pick_canonical_rate": 0.020999999999999998
+        },
+        "0.5": {
+          "sel_spearman": 0.38135547959141197,
+          "canon_spearman": 0.31576239949228224,
+          "delta_spearman": 0.06559308009912973,
+          "test_oracle_regret": 0.01479518570816931,
+          "pick_canonical_rate": 0.01125
+        }
+      }
+    },
+    "newsroom": {
+      "metrics": {
+        "coh": {
+          "0.1": {
+            "n_units": 60,
+            "calib_size": 6,
+            "n_boot": 1000,
+            "sel_spearman": 0.4017578304774788,
+            "canon_spearman": 0.3989364241614489,
+            "delta_spearman": 0.0028214063160298952,
+            "sel_kendall": 0.35859477813151974,
+            "canon_kendall": 0.3617220240959928,
+            "sel_spearman_std": 0.02160220980746446,
+            "test_oracle_regret": 0.03364330917745398,
+            "pick_canonical_rate": 0.246,
+            "pick_distribution": {
+              "0_1": 0.214,
+              "1_3": 0.178,
+              "1_5": 0.246,
+              "0_10": 0.082,
+              "0_100": 0.28
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 60,
+            "calib_size": 12,
+            "n_boot": 1000,
+            "sel_spearman": 0.400577742408488,
+            "canon_spearman": 0.3994425348908465,
+            "delta_spearman": 0.0011352075176414567,
+            "sel_kendall": 0.35760511814545554,
+            "canon_kendall": 0.3622810570896261,
+            "sel_spearman_std": 0.029154837418992916,
+            "test_oracle_regret": 0.03786412707254637,
+            "pick_canonical_rate": 0.252,
+            "pick_distribution": {
+              "0_1": 0.209,
+              "1_3": 0.138,
+              "1_5": 0.252,
+              "0_10": 0.07,
+              "0_100": 0.331
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 60,
+            "calib_size": 18,
+            "n_boot": 1000,
+            "sel_spearman": 0.3983558649974099,
+            "canon_spearman": 0.3995130340203609,
+            "delta_spearman": -0.0011571690229510434,
+            "sel_kendall": 0.3550914434051674,
+            "canon_kendall": 0.36214608693257483,
+            "sel_spearman_std": 0.035453317874914785,
+            "test_oracle_regret": 0.04000838036143364,
+            "pick_canonical_rate": 0.195,
+            "pick_distribution": {
+              "0_1": 0.209,
+              "1_3": 0.136,
+              "1_5": 0.195,
+              "0_10": 0.035,
+              "0_100": 0.425
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 60,
+            "calib_size": 24,
+            "n_boot": 1000,
+            "sel_spearman": 0.39931419535593626,
+            "canon_spearman": 0.4000735155983457,
+            "delta_spearman": -0.0007593202424094336,
+            "sel_kendall": 0.3557841993025085,
+            "canon_kendall": 0.3628813065870857,
+            "sel_spearman_std": 0.04183009895770094,
+            "test_oracle_regret": 0.042533871477952956,
+            "pick_canonical_rate": 0.159,
+            "pick_distribution": {
+              "0_1": 0.213,
+              "1_3": 0.09,
+              "1_5": 0.159,
+              "0_10": 0.035,
+              "0_100": 0.503
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 60,
+            "calib_size": 30,
+            "n_boot": 1000,
+            "sel_spearman": 0.396410733131943,
+            "canon_spearman": 0.3992637554326656,
+            "delta_spearman": -0.0028530223007225963,
+            "sel_kendall": 0.35325565630005584,
+            "canon_kendall": 0.3620190579061159,
+            "sel_spearman_std": 0.05027973299203506,
+            "test_oracle_regret": 0.04876059351902382,
+            "pick_canonical_rate": 0.13,
+            "pick_distribution": {
+              "0_1": 0.21,
+              "1_3": 0.087,
+              "1_5": 0.13,
+              "0_10": 0.022,
+              "0_100": 0.551
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "flu": {
+          "0.1": {
+            "n_units": 60,
+            "calib_size": 6,
+            "n_boot": 1000,
+            "sel_spearman": 0.390724323946743,
+            "canon_spearman": 0.39745050568630824,
+            "delta_spearman": -0.00672618173956524,
+            "sel_kendall": 0.3484026954308355,
+            "canon_kendall": 0.36370966435597457,
+            "sel_spearman_std": 0.03508221744975281,
+            "test_oracle_regret": 0.04330129192203263,
+            "pick_canonical_rate": 0.199,
+            "pick_distribution": {
+              "0_1": 0.354,
+              "1_3": 0.136,
+              "1_5": 0.199,
+              "0_10": 0.234,
+              "0_100": 0.077
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 60,
+            "calib_size": 12,
+            "n_boot": 1000,
+            "sel_spearman": 0.3857073482282811,
+            "canon_spearman": 0.39604385264887954,
+            "delta_spearman": -0.010336504420598414,
+            "sel_kendall": 0.34248415515894126,
+            "canon_kendall": 0.36253501391087245,
+            "sel_spearman_std": 0.04410129585868849,
+            "test_oracle_regret": 0.04977515494321279,
+            "pick_canonical_rate": 0.161,
+            "pick_distribution": {
+              "0_1": 0.42,
+              "1_3": 0.128,
+              "1_5": 0.161,
+              "0_10": 0.214,
+              "0_100": 0.077
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 60,
+            "calib_size": 18,
+            "n_boot": 1000,
+            "sel_spearman": 0.3876941799159426,
+            "canon_spearman": 0.39592868148922744,
+            "delta_spearman": -0.008234501573284814,
+            "sel_kendall": 0.3432852687990537,
+            "canon_kendall": 0.3626117645318478,
+            "sel_spearman_std": 0.049697049182683015,
+            "test_oracle_regret": 0.05117152928003606,
+            "pick_canonical_rate": 0.154,
+            "pick_distribution": {
+              "0_1": 0.484,
+              "1_3": 0.066,
+              "1_5": 0.154,
+              "0_10": 0.251,
+              "0_100": 0.045
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 60,
+            "calib_size": 24,
+            "n_boot": 1000,
+            "sel_spearman": 0.38712201806866026,
+            "canon_spearman": 0.3968167844279434,
+            "delta_spearman": -0.009694766359283125,
+            "sel_kendall": 0.3416298232224093,
+            "canon_kendall": 0.3631908378739768,
+            "sel_spearman_std": 0.05818766739244746,
+            "test_oracle_regret": 0.056599422677968504,
+            "pick_canonical_rate": 0.15,
+            "pick_distribution": {
+              "0_1": 0.521,
+              "1_3": 0.056,
+              "1_5": 0.15,
+              "0_10": 0.245,
+              "0_100": 0.028
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 60,
+            "calib_size": 30,
+            "n_boot": 1000,
+            "sel_spearman": 0.3860999951141249,
+            "canon_spearman": 0.39617278108321663,
+            "delta_spearman": -0.010072785969091724,
+            "sel_kendall": 0.33955302201917037,
+            "canon_kendall": 0.36248216383203463,
+            "sel_spearman_std": 0.06832794033100136,
+            "test_oracle_regret": 0.0616333358021883,
+            "pick_canonical_rate": 0.132,
+            "pick_distribution": {
+              "0_1": 0.591,
+              "1_3": 0.032,
+              "1_5": 0.132,
+              "0_10": 0.222,
+              "0_100": 0.023
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "inf": {
+          "0.1": {
+            "n_units": 59,
+            "calib_size": 6,
+            "n_boot": 1000,
+            "sel_spearman": 0.36909877897890525,
+            "canon_spearman": 0.27511652686863336,
+            "delta_spearman": 0.09398225211027189,
+            "sel_kendall": 0.32404163381538387,
+            "canon_kendall": 0.24093623612228285,
+            "sel_spearman_std": 0.05015561470700684,
+            "test_oracle_regret": 0.04408717336384269,
+            "pick_canonical_rate": 0.07,
+            "pick_distribution": {
+              "0_1": 0.228,
+              "1_3": 0.471,
+              "1_5": 0.07,
+              "0_10": 0.058,
+              "0_100": 0.173
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 59,
+            "calib_size": 12,
+            "n_boot": 1000,
+            "sel_spearman": 0.3778561412903655,
+            "canon_spearman": 0.2756494070067099,
+            "delta_spearman": 0.10220673428365556,
+            "sel_kendall": 0.33269112451825844,
+            "canon_kendall": 0.24150822981332437,
+            "sel_spearman_std": 0.04806730065332508,
+            "test_oracle_regret": 0.03614506326125662,
+            "pick_canonical_rate": 0.028,
+            "pick_distribution": {
+              "0_1": 0.243,
+              "1_3": 0.563,
+              "1_5": 0.028,
+              "0_10": 0.026,
+              "0_100": 0.14
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 59,
+            "calib_size": 18,
+            "n_boot": 1000,
+            "sel_spearman": 0.3795862139992678,
+            "canon_spearman": 0.2751543349871146,
+            "delta_spearman": 0.10443187901215317,
+            "sel_kendall": 0.3341587403785527,
+            "canon_kendall": 0.24100042330115604,
+            "sel_spearman_std": 0.05005912742773626,
+            "test_oracle_regret": 0.03738012856404627,
+            "pick_canonical_rate": 0.011,
+            "pick_distribution": {
+              "0_1": 0.281,
+              "1_3": 0.573,
+              "1_5": 0.011,
+              "0_10": 0.007,
+              "0_100": 0.128
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 59,
+            "calib_size": 24,
+            "n_boot": 1000,
+            "sel_spearman": 0.38196086503392535,
+            "canon_spearman": 0.27392853986166826,
+            "delta_spearman": 0.10803232517225708,
+            "sel_kendall": 0.33704320292006956,
+            "canon_kendall": 0.23969587009302756,
+            "sel_spearman_std": 0.05433205473046209,
+            "test_oracle_regret": 0.036198241433983855,
+            "pick_canonical_rate": 0.007,
+            "pick_distribution": {
+              "0_1": 0.247,
+              "1_3": 0.649,
+              "1_5": 0.007,
+              "0_10": 0.005,
+              "0_100": 0.092
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 59,
+            "calib_size": 30,
+            "n_boot": 1000,
+            "sel_spearman": 0.38396277866089495,
+            "canon_spearman": 0.2749812411911364,
+            "delta_spearman": 0.10898153746975853,
+            "sel_kendall": 0.3389158577980815,
+            "canon_kendall": 0.24086670674668667,
+            "sel_spearman_std": 0.058795185747623914,
+            "test_oracle_regret": 0.03890158082352277,
+            "pick_canonical_rate": 0.0,
+            "pick_distribution": {
+              "0_1": 0.23,
+              "1_3": 0.695,
+              "1_5": 0.0,
+              "0_10": 0.001,
+              "0_100": 0.074
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "rel": {
+          "0.1": {
+            "n_units": 60,
+            "calib_size": 6,
+            "n_boot": 1000,
+            "sel_spearman": 0.35892910181185234,
+            "canon_spearman": 0.33273973282523034,
+            "delta_spearman": 0.026189368986621997,
+            "sel_kendall": 0.32106503835373906,
+            "canon_kendall": 0.3017265740221012,
+            "sel_spearman_std": 0.04536905830402865,
+            "test_oracle_regret": 0.0474437109602282,
+            "pick_canonical_rate": 0.27,
+            "pick_distribution": {
+              "0_1": 0.045,
+              "1_3": 0.406,
+              "1_5": 0.27,
+              "0_10": 0.028,
+              "0_100": 0.251
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 60,
+            "calib_size": 12,
+            "n_boot": 1000,
+            "sel_spearman": 0.36225349219770353,
+            "canon_spearman": 0.3315880207490271,
+            "delta_spearman": 0.03066547144867643,
+            "sel_kendall": 0.3242351259256879,
+            "canon_kendall": 0.30061388770590575,
+            "sel_spearman_std": 0.04891712934505736,
+            "test_oracle_regret": 0.04544079257920958,
+            "pick_canonical_rate": 0.218,
+            "pick_distribution": {
+              "0_1": 0.025,
+              "1_3": 0.465,
+              "1_5": 0.218,
+              "0_10": 0.009,
+              "0_100": 0.283
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 60,
+            "calib_size": 18,
+            "n_boot": 1000,
+            "sel_spearman": 0.36952329382532517,
+            "canon_spearman": 0.3348494782099877,
+            "delta_spearman": 0.034673815615337444,
+            "sel_kendall": 0.3312701814547867,
+            "canon_kendall": 0.30359478335489176,
+            "sel_spearman_std": 0.051286649205800394,
+            "test_oracle_regret": 0.04071824121677951,
+            "pick_canonical_rate": 0.155,
+            "pick_distribution": {
+              "0_1": 0.005,
+              "1_3": 0.557,
+              "1_5": 0.155,
+              "0_10": 0.001,
+              "0_100": 0.282
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 60,
+            "calib_size": 24,
+            "n_boot": 1000,
+            "sel_spearman": 0.36727871393753664,
+            "canon_spearman": 0.33193556324394946,
+            "delta_spearman": 0.03534315069358718,
+            "sel_kendall": 0.32989329466838185,
+            "canon_kendall": 0.3008500572820103,
+            "sel_spearman_std": 0.05726593538627102,
+            "test_oracle_regret": 0.04258207419428349,
+            "pick_canonical_rate": 0.128,
+            "pick_distribution": {
+              "0_1": 0.003,
+              "1_3": 0.617,
+              "1_5": 0.128,
+              "0_10": 0.0,
+              "0_100": 0.252
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 60,
+            "calib_size": 30,
+            "n_boot": 1000,
+            "sel_spearman": 0.3719393888791997,
+            "canon_spearman": 0.3321511946696983,
+            "delta_spearman": 0.039788194209501415,
+            "sel_kendall": 0.33513434559447863,
+            "canon_kendall": 0.30115895140937027,
+            "sel_spearman_std": 0.06601971623548326,
+            "test_oracle_regret": 0.042530348714566034,
+            "pick_canonical_rate": 0.085,
+            "pick_distribution": {
+              "0_1": 0.003,
+              "1_3": 0.705,
+              "1_5": 0.085,
+              "0_10": 0.0,
+              "0_100": 0.207
+            },
+            "canonical_range": "1_5"
+          }
+        }
+      },
+      "average": {
+        "0.1": {
+          "sel_spearman": 0.38012750880374485,
+          "canon_spearman": 0.35106079738540524,
+          "delta_spearman": 0.029066711418339608,
+          "test_oracle_regret": 0.042118871355889376,
+          "pick_canonical_rate": 0.19625
+        },
+        "0.2": {
+          "sel_spearman": 0.38159868103120953,
+          "canon_spearman": 0.35068095382386577,
+          "delta_spearman": 0.03091772720734376,
+          "test_oracle_regret": 0.042306284464056335,
+          "pick_canonical_rate": 0.16475
+        },
+        "0.3": {
+          "sel_spearman": 0.3837898881844864,
+          "canon_spearman": 0.3513613821766727,
+          "delta_spearman": 0.03242850600781372,
+          "test_oracle_regret": 0.04231956985557388,
+          "pick_canonical_rate": 0.12875
+        },
+        "0.4": {
+          "sel_spearman": 0.38391894809901467,
+          "canon_spearman": 0.3506886007829767,
+          "delta_spearman": 0.03323034731603797,
+          "test_oracle_regret": 0.0444784024460472,
+          "pick_canonical_rate": 0.111
+        },
+        "0.5": {
+          "sel_spearman": 0.3846032239465407,
+          "canon_spearman": 0.35064224309417924,
+          "delta_spearman": 0.03396098085236143,
+          "test_oracle_regret": 0.04795646471482523,
+          "pick_canonical_rate": 0.08675000000000001
+        }
+      }
+    },
+    "tc": {
+      "metrics": {
+        "coh": {
+          "0.1": {
+            "n_units": 27,
+            "calib_size": 3,
+            "n_boot": 1000,
+            "sel_spearman": 0.3661763588841065,
+            "canon_spearman": 0.4769107088835813,
+            "delta_spearman": -0.11073434999947479,
+            "sel_kendall": 0.33908795938621916,
+            "canon_kendall": 0.42642254028533727,
+            "sel_spearman_std": 0.06295857309347563,
+            "test_oracle_regret": 0.1266919604524858,
+            "pick_canonical_rate": 0.21,
+            "pick_distribution": {
+              "0_1": 0.21,
+              "1_3": 0.151,
+              "1_5": 0.116,
+              "0_10": 0.237,
+              "0_100": 0.286
+            },
+            "canonical_range": "0_1"
+          },
+          "0.2": {
+            "n_units": 27,
+            "calib_size": 5,
+            "n_boot": 1000,
+            "sel_spearman": 0.3534307993753248,
+            "canon_spearman": 0.47789678205162933,
+            "delta_spearman": -0.12446598267630454,
+            "sel_kendall": 0.32869423337270987,
+            "canon_kendall": 0.42735858487462086,
+            "sel_spearman_std": 0.07166531836537293,
+            "test_oracle_regret": 0.15224787774662923,
+            "pick_canonical_rate": 0.194,
+            "pick_distribution": {
+              "0_1": 0.194,
+              "1_3": 0.122,
+              "1_5": 0.111,
+              "0_10": 0.21,
+              "0_100": 0.363
+            },
+            "canonical_range": "0_1"
+          },
+          "0.3": {
+            "n_units": 27,
+            "calib_size": 8,
+            "n_boot": 1000,
+            "sel_spearman": 0.34061839726357623,
+            "canon_spearman": 0.4769780331084747,
+            "delta_spearman": -0.13635963584489846,
+            "sel_kendall": 0.314460451281754,
+            "canon_kendall": 0.4265123199060363,
+            "sel_spearman_std": 0.11089565737693977,
+            "test_oracle_regret": 0.18432352801837054,
+            "pick_canonical_rate": 0.285,
+            "pick_distribution": {
+              "0_1": 0.285,
+              "1_3": 0.096,
+              "1_5": 0.093,
+              "0_10": 0.158,
+              "0_100": 0.368
+            },
+            "canonical_range": "0_1"
+          },
+          "0.4": {
+            "n_units": 27,
+            "calib_size": 11,
+            "n_boot": 1000,
+            "sel_spearman": 0.31880264912394596,
+            "canon_spearman": 0.4769247162208499,
+            "delta_spearman": -0.15812206709690396,
+            "sel_kendall": 0.29276403771118864,
+            "canon_kendall": 0.4268455769334093,
+            "sel_spearman_std": 0.15617258808135537,
+            "test_oracle_regret": 0.22489920183091483,
+            "pick_canonical_rate": 0.354,
+            "pick_distribution": {
+              "0_1": 0.354,
+              "1_3": 0.055,
+              "1_5": 0.074,
+              "0_10": 0.125,
+              "0_100": 0.392
+            },
+            "canonical_range": "0_1"
+          },
+          "0.5": {
+            "n_units": 27,
+            "calib_size": 14,
+            "n_boot": 998,
+            "sel_spearman": 0.29791622862441236,
+            "canon_spearman": 0.4822198852537437,
+            "delta_spearman": -0.18430365662933135,
+            "sel_kendall": 0.2717284688398555,
+            "canon_kendall": 0.4314630746398573,
+            "sel_spearman_std": 0.19588130377107318,
+            "test_oracle_regret": 0.2799799565507557,
+            "pick_canonical_rate": 0.3777555110220441,
+            "pick_distribution": {
+              "0_1": 0.3777555110220441,
+              "1_3": 0.04408817635270541,
+              "1_5": 0.061122244488977955,
+              "0_10": 0.1062124248496994,
+              "0_100": 0.41082164328657317
+            },
+            "canonical_range": "0_1"
+          }
+        },
+        "eng": {
+          "0.1": {
+            "n_units": 32,
+            "calib_size": 3,
+            "n_boot": 1000,
+            "sel_spearman": 0.5031262629602913,
+            "canon_spearman": 0.49998929285665394,
+            "delta_spearman": 0.0031369701036373376,
+            "sel_kendall": 0.45267234998355266,
+            "canon_kendall": 0.4560961105419594,
+            "sel_spearman_std": 0.05070900336077149,
+            "test_oracle_regret": 0.08996022895764717,
+            "pick_canonical_rate": 0.126,
+            "pick_distribution": {
+              "0_1": 0.108,
+              "1_3": 0.126,
+              "1_5": 0.226,
+              "0_10": 0.276,
+              "0_100": 0.264
+            },
+            "canonical_range": "1_3"
+          },
+          "0.2": {
+            "n_units": 32,
+            "calib_size": 6,
+            "n_boot": 1000,
+            "sel_spearman": 0.501322181221166,
+            "canon_spearman": 0.5009083577401253,
+            "delta_spearman": 0.0004138234810406871,
+            "sel_kendall": 0.45010892694029314,
+            "canon_kendall": 0.4570865577525404,
+            "sel_spearman_std": 0.062033846513230094,
+            "test_oracle_regret": 0.09202707103864524,
+            "pick_canonical_rate": 0.085,
+            "pick_distribution": {
+              "0_1": 0.091,
+              "1_3": 0.085,
+              "1_5": 0.189,
+              "0_10": 0.371,
+              "0_100": 0.264
+            },
+            "canonical_range": "1_3"
+          },
+          "0.3": {
+            "n_units": 32,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.4958005213022019,
+            "canon_spearman": 0.5003380731161986,
+            "delta_spearman": -0.004537551813996676,
+            "sel_kendall": 0.444127947916704,
+            "canon_kendall": 0.45657884298204054,
+            "sel_spearman_std": 0.07682671195616052,
+            "test_oracle_regret": 0.10185939962469494,
+            "pick_canonical_rate": 0.076,
+            "pick_distribution": {
+              "0_1": 0.064,
+              "1_3": 0.076,
+              "1_5": 0.186,
+              "0_10": 0.443,
+              "0_100": 0.231
+            },
+            "canonical_range": "1_3"
+          },
+          "0.4": {
+            "n_units": 32,
+            "calib_size": 13,
+            "n_boot": 1000,
+            "sel_spearman": 0.503598848341311,
+            "canon_spearman": 0.5012927516181256,
+            "delta_spearman": 0.00230609672318538,
+            "sel_kendall": 0.450414424932466,
+            "canon_kendall": 0.4571597422076449,
+            "sel_spearman_std": 0.08855966942636577,
+            "test_oracle_regret": 0.10074047545370628,
+            "pick_canonical_rate": 0.056,
+            "pick_distribution": {
+              "0_1": 0.044,
+              "1_3": 0.056,
+              "1_5": 0.126,
+              "0_10": 0.546,
+              "0_100": 0.228
+            },
+            "canonical_range": "1_3"
+          },
+          "0.5": {
+            "n_units": 32,
+            "calib_size": 16,
+            "n_boot": 1000,
+            "sel_spearman": 0.5025374332995943,
+            "canon_spearman": 0.49812525308136896,
+            "delta_spearman": 0.00441218021822537,
+            "sel_kendall": 0.4484248798311745,
+            "canon_kendall": 0.45450057692442325,
+            "sel_spearman_std": 0.10464221847392666,
+            "test_oracle_regret": 0.10827692925737924,
+            "pick_canonical_rate": 0.051,
+            "pick_distribution": {
+              "0_1": 0.021,
+              "1_3": 0.051,
+              "1_5": 0.123,
+              "0_10": 0.621,
+              "0_100": 0.184
+            },
+            "canonical_range": "1_3"
+          }
+        },
+        "gro": {
+          "0.1": {
+            "n_units": 35,
+            "calib_size": 4,
+            "n_boot": 1000,
+            "sel_spearman": 0.546960603982722,
+            "canon_spearman": 0.5570173477956889,
+            "delta_spearman": -0.01005674381296695,
+            "sel_kendall": 0.5227944840338241,
+            "canon_kendall": 0.5262808006821716,
+            "sel_spearman_std": 0.059850442454242155,
+            "test_oracle_regret": 0.06565550935657902,
+            "pick_canonical_rate": 0.178,
+            "pick_distribution": {
+              "0_1": 0.178,
+              "1_3": 0.126,
+              "1_5": 0.063,
+              "0_10": 0.159,
+              "0_100": 0.474
+            },
+            "canonical_range": "0_1"
+          },
+          "0.2": {
+            "n_units": 35,
+            "calib_size": 7,
+            "n_boot": 1000,
+            "sel_spearman": 0.5549777196925599,
+            "canon_spearman": 0.5564448772638548,
+            "delta_spearman": -0.001467157571294897,
+            "sel_kendall": 0.5304684999769479,
+            "canon_kendall": 0.5257573559806524,
+            "sel_spearman_std": 0.05896225275166139,
+            "test_oracle_regret": 0.0575470363977524,
+            "pick_canonical_rate": 0.207,
+            "pick_distribution": {
+              "0_1": 0.207,
+              "1_3": 0.076,
+              "1_5": 0.023,
+              "0_10": 0.141,
+              "0_100": 0.553
+            },
+            "canonical_range": "0_1"
+          },
+          "0.3": {
+            "n_units": 35,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.5588453224851446,
+            "canon_spearman": 0.5569557511135184,
+            "delta_spearman": 0.001889571371626264,
+            "sel_kendall": 0.5346581131241994,
+            "canon_kendall": 0.5262976052930677,
+            "sel_spearman_std": 0.06160222933975809,
+            "test_oracle_regret": 0.054225278318448686,
+            "pick_canonical_rate": 0.185,
+            "pick_distribution": {
+              "0_1": 0.185,
+              "1_3": 0.056,
+              "1_5": 0.012,
+              "0_10": 0.127,
+              "0_100": 0.62
+            },
+            "canonical_range": "0_1"
+          },
+          "0.4": {
+            "n_units": 35,
+            "calib_size": 14,
+            "n_boot": 1000,
+            "sel_spearman": 0.5633612518565446,
+            "canon_spearman": 0.5555435463766587,
+            "delta_spearman": 0.007817705479885917,
+            "sel_kendall": 0.539223177108823,
+            "canon_kendall": 0.5252238720755438,
+            "sel_spearman_std": 0.06677765725340294,
+            "test_oracle_regret": 0.05078710383493402,
+            "pick_canonical_rate": 0.184,
+            "pick_distribution": {
+              "0_1": 0.184,
+              "1_3": 0.016,
+              "1_5": 0.003,
+              "0_10": 0.1,
+              "0_100": 0.697
+            },
+            "canonical_range": "0_1"
+          },
+          "0.5": {
+            "n_units": 35,
+            "calib_size": 18,
+            "n_boot": 1000,
+            "sel_spearman": 0.5714906294839456,
+            "canon_spearman": 0.5577427080124685,
+            "delta_spearman": 0.013747921471477076,
+            "sel_kendall": 0.5475066488822565,
+            "canon_kendall": 0.5269251925249229,
+            "sel_spearman_std": 0.07868708877826673,
+            "test_oracle_regret": 0.050708475238419794,
+            "pick_canonical_rate": 0.144,
+            "pick_distribution": {
+              "0_1": 0.144,
+              "1_3": 0.009,
+              "1_5": 0.0,
+              "0_10": 0.076,
+              "0_100": 0.771
+            },
+            "canonical_range": "0_1"
+          }
+        },
+        "nat": {
+          "0.1": {
+            "n_units": 32,
+            "calib_size": 3,
+            "n_boot": 1000,
+            "sel_spearman": 0.6217681661638814,
+            "canon_spearman": 0.3439348109235979,
+            "delta_spearman": 0.2778333552402835,
+            "sel_kendall": 0.5758972261090586,
+            "canon_kendall": 0.31635923535043553,
+            "sel_spearman_std": 0.13311231964310324,
+            "test_oracle_regret": 0.11658209280788637,
+            "pick_canonical_rate": 0.067,
+            "pick_distribution": {
+              "0_1": 0.151,
+              "1_3": 0.067,
+              "1_5": 0.064,
+              "0_10": 0.089,
+              "0_100": 0.629
+            },
+            "canonical_range": "1_3"
+          },
+          "0.2": {
+            "n_units": 32,
+            "calib_size": 6,
+            "n_boot": 1000,
+            "sel_spearman": 0.6442235359006468,
+            "canon_spearman": 0.3451262311832833,
+            "delta_spearman": 0.29909730471736357,
+            "sel_kendall": 0.5977976126599144,
+            "canon_kendall": 0.3174372604962539,
+            "sel_spearman_std": 0.10881960737406327,
+            "test_oracle_regret": 0.09200960974479437,
+            "pick_canonical_rate": 0.013,
+            "pick_distribution": {
+              "0_1": 0.114,
+              "1_3": 0.013,
+              "1_5": 0.046,
+              "0_10": 0.081,
+              "0_100": 0.746
+            },
+            "canonical_range": "1_3"
+          },
+          "0.3": {
+            "n_units": 32,
+            "calib_size": 10,
+            "n_boot": 1000,
+            "sel_spearman": 0.6383983214423914,
+            "canon_spearman": 0.34058819550957614,
+            "delta_spearman": 0.29781012593281525,
+            "sel_kendall": 0.5927801416582924,
+            "canon_kendall": 0.3131459229157682,
+            "sel_spearman_std": 0.11438878455777032,
+            "test_oracle_regret": 0.09205771922921985,
+            "pick_canonical_rate": 0.009,
+            "pick_distribution": {
+              "0_1": 0.115,
+              "1_3": 0.009,
+              "1_5": 0.035,
+              "0_10": 0.067,
+              "0_100": 0.774
+            },
+            "canonical_range": "1_3"
+          },
+          "0.4": {
+            "n_units": 32,
+            "calib_size": 13,
+            "n_boot": 1000,
+            "sel_spearman": 0.6545876382060594,
+            "canon_spearman": 0.34456475022245064,
+            "delta_spearman": 0.3100228879836087,
+            "sel_kendall": 0.608745512489374,
+            "canon_kendall": 0.3168804186140746,
+            "sel_spearman_std": 0.13877147485432687,
+            "test_oracle_regret": 0.08840576821903806,
+            "pick_canonical_rate": 0.0,
+            "pick_distribution": {
+              "0_1": 0.125,
+              "1_3": 0.0,
+              "1_5": 0.029,
+              "0_10": 0.052,
+              "0_100": 0.794
+            },
+            "canonical_range": "1_3"
+          },
+          "0.5": {
+            "n_units": 32,
+            "calib_size": 16,
+            "n_boot": 1000,
+            "sel_spearman": 0.6816256157699706,
+            "canon_spearman": 0.34847146070107815,
+            "delta_spearman": 0.33315415506889245,
+            "sel_kendall": 0.635427724933061,
+            "canon_kendall": 0.32060444392942605,
+            "sel_spearman_std": 0.1614718958405168,
+            "test_oracle_regret": 0.06676317225964226,
+            "pick_canonical_rate": 0.001,
+            "pick_distribution": {
+              "0_1": 0.09,
+              "1_3": 0.001,
+              "1_5": 0.009,
+              "0_10": 0.035,
+              "0_100": 0.865
+            },
+            "canonical_range": "1_3"
+          }
+        }
+      },
+      "average": {
+        "0.1": {
+          "sel_spearman": 0.5095078479977503,
+          "canon_spearman": 0.4694630401148805,
+          "delta_spearman": 0.04004480788286979,
+          "test_oracle_regret": 0.09972244789364959,
+          "pick_canonical_rate": 0.14525
+        },
+        "0.2": {
+          "sel_spearman": 0.5134885590474244,
+          "canon_spearman": 0.47009406205972315,
+          "delta_spearman": 0.04339449698770126,
+          "test_oracle_regret": 0.09845789873195532,
+          "pick_canonical_rate": 0.12475
+        },
+        "0.3": {
+          "sel_spearman": 0.5084156406233286,
+          "canon_spearman": 0.468715013211942,
+          "delta_spearman": 0.03970062741138658,
+          "test_oracle_regret": 0.1081164812976835,
+          "pick_canonical_rate": 0.13875
+        },
+        "0.4": {
+          "sel_spearman": 0.5100875968819653,
+          "canon_spearman": 0.4695814411095212,
+          "delta_spearman": 0.04050615577244404,
+          "test_oracle_regret": 0.1162081373346483,
+          "pick_canonical_rate": 0.1485
+        },
+        "0.5": {
+          "sel_spearman": 0.5133924767944807,
+          "canon_spearman": 0.47163982676216487,
+          "delta_spearman": 0.041752650032315874,
+          "test_oracle_regret": 0.12643213332654926,
+          "pick_canonical_rate": 0.143438877755511
+        }
+      }
+    },
+    "wp_a": {
+      "metrics": {
+        "coh": {
+          "0.1": {
+            "n_units": 398,
+            "calib_size": 40,
+            "n_boot": 1000,
+            "sel_spearman": 0.33322876265181367,
+            "canon_spearman": 0.3216666607843138,
+            "delta_spearman": 0.011562101867499897,
+            "sel_kendall": 0.26620338162276014,
+            "canon_kendall": 0.26834943799294864,
+            "sel_spearman_std": 0.021947400792448772,
+            "test_oracle_regret": 0.027681185849077132,
+            "pick_canonical_rate": 0.132,
+            "pick_distribution": {
+              "0_1": 0.281,
+              "1_3": 0.175,
+              "1_5": 0.132,
+              "0_10": 0.156,
+              "0_100": 0.256
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 398,
+            "calib_size": 80,
+            "n_boot": 1000,
+            "sel_spearman": 0.3325583252500761,
+            "canon_spearman": 0.3220317908383404,
+            "delta_spearman": 0.010526534411735733,
+            "sel_kendall": 0.2650795426321508,
+            "canon_kendall": 0.26871723751729026,
+            "sel_spearman_std": 0.028038778245824503,
+            "test_oracle_regret": 0.030239686352783245,
+            "pick_canonical_rate": 0.117,
+            "pick_distribution": {
+              "0_1": 0.347,
+              "1_3": 0.137,
+              "1_5": 0.117,
+              "0_10": 0.155,
+              "0_100": 0.244
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 398,
+            "calib_size": 119,
+            "n_boot": 1000,
+            "sel_spearman": 0.3303643806812041,
+            "canon_spearman": 0.3208209308793736,
+            "delta_spearman": 0.009543449801830528,
+            "sel_kendall": 0.26284648333494415,
+            "canon_kendall": 0.2677813880724778,
+            "sel_spearman_std": 0.03395321820200658,
+            "test_oracle_regret": 0.032641940110781906,
+            "pick_canonical_rate": 0.095,
+            "pick_distribution": {
+              "0_1": 0.396,
+              "1_3": 0.117,
+              "1_5": 0.095,
+              "0_10": 0.128,
+              "0_100": 0.264
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 398,
+            "calib_size": 159,
+            "n_boot": 1000,
+            "sel_spearman": 0.3302716258838986,
+            "canon_spearman": 0.32133269969221745,
+            "delta_spearman": 0.008938926191681129,
+            "sel_kendall": 0.26258345945688616,
+            "canon_kendall": 0.2682498756138968,
+            "sel_spearman_std": 0.04331847227275999,
+            "test_oracle_regret": 0.03611506367181336,
+            "pick_canonical_rate": 0.075,
+            "pick_distribution": {
+              "0_1": 0.473,
+              "1_3": 0.103,
+              "1_5": 0.075,
+              "0_10": 0.117,
+              "0_100": 0.232
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 398,
+            "calib_size": 199,
+            "n_boot": 1000,
+            "sel_spearman": 0.33428611113702905,
+            "canon_spearman": 0.32260124938980805,
+            "delta_spearman": 0.011684861747220998,
+            "sel_kendall": 0.26485218290567863,
+            "canon_kendall": 0.2694636774563428,
+            "sel_spearman_std": 0.047398070428519956,
+            "test_oracle_regret": 0.035175672027500576,
+            "pick_canonical_rate": 0.035,
+            "pick_distribution": {
+              "0_1": 0.569,
+              "1_3": 0.051,
+              "1_5": 0.035,
+              "0_10": 0.115,
+              "0_100": 0.23
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "enj": {
+          "0.1": {
+            "n_units": 380,
+            "calib_size": 38,
+            "n_boot": 1000,
+            "sel_spearman": 0.15130229547294127,
+            "canon_spearman": 0.1694761677470072,
+            "delta_spearman": -0.018173872274065916,
+            "sel_kendall": 0.11909342800142796,
+            "canon_kendall": 0.13905890884755734,
+            "sel_spearman_std": 0.02637313600927244,
+            "test_oracle_regret": 0.032453257423036876,
+            "pick_canonical_rate": 0.252,
+            "pick_distribution": {
+              "0_1": 0.094,
+              "1_3": 0.182,
+              "1_5": 0.252,
+              "0_10": 0.22,
+              "0_100": 0.252
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 380,
+            "calib_size": 76,
+            "n_boot": 1000,
+            "sel_spearman": 0.1488088287481719,
+            "canon_spearman": 0.16916418748421658,
+            "delta_spearman": -0.020355358736044687,
+            "sel_kendall": 0.11642023541988855,
+            "canon_kendall": 0.13884935563747136,
+            "sel_spearman_std": 0.030647171622891625,
+            "test_oracle_regret": 0.038312397678128676,
+            "pick_canonical_rate": 0.247,
+            "pick_distribution": {
+              "0_1": 0.066,
+              "1_3": 0.138,
+              "1_5": 0.247,
+              "0_10": 0.262,
+              "0_100": 0.287
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 380,
+            "calib_size": 114,
+            "n_boot": 1000,
+            "sel_spearman": 0.1470634683520441,
+            "canon_spearman": 0.16853790665442187,
+            "delta_spearman": -0.021474438302377774,
+            "sel_kendall": 0.11474173575355093,
+            "canon_kendall": 0.13836333100147177,
+            "sel_spearman_std": 0.03636874309263944,
+            "test_oracle_regret": 0.044282221929847196,
+            "pick_canonical_rate": 0.27,
+            "pick_distribution": {
+              "0_1": 0.034,
+              "1_3": 0.101,
+              "1_5": 0.27,
+              "0_10": 0.315,
+              "0_100": 0.28
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 380,
+            "calib_size": 152,
+            "n_boot": 1000,
+            "sel_spearman": 0.14517746038646062,
+            "canon_spearman": 0.16952378211644048,
+            "delta_spearman": -0.02434632172997986,
+            "sel_kendall": 0.11291420862904804,
+            "canon_kendall": 0.13917657370118075,
+            "sel_spearman_std": 0.04192216642111002,
+            "test_oracle_regret": 0.05071804215843232,
+            "pick_canonical_rate": 0.255,
+            "pick_distribution": {
+              "0_1": 0.025,
+              "1_3": 0.085,
+              "1_5": 0.255,
+              "0_10": 0.344,
+              "0_100": 0.291
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 380,
+            "calib_size": 190,
+            "n_boot": 1000,
+            "sel_spearman": 0.14304966645406414,
+            "canon_spearman": 0.1700308109197874,
+            "delta_spearman": -0.02698114446572325,
+            "sel_kendall": 0.11095589273478217,
+            "canon_kendall": 0.13962603573460275,
+            "sel_spearman_std": 0.04977571180756098,
+            "test_oracle_regret": 0.05935162082103171,
+            "pick_canonical_rate": 0.254,
+            "pick_distribution": {
+              "0_1": 0.012,
+              "1_3": 0.062,
+              "1_5": 0.254,
+              "0_10": 0.333,
+              "0_100": 0.339
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "gra": {
+          "0.1": {
+            "n_units": 393,
+            "calib_size": 39,
+            "n_boot": 1000,
+            "sel_spearman": 0.34323946311516523,
+            "canon_spearman": 0.3469509061372977,
+            "delta_spearman": -0.0037114430221324435,
+            "sel_kendall": 0.270600650511479,
+            "canon_kendall": 0.2846830886086759,
+            "sel_spearman_std": 0.041192506910770886,
+            "test_oracle_regret": 0.038231187946622586,
+            "pick_canonical_rate": 0.189,
+            "pick_distribution": {
+              "0_1": 0.362,
+              "1_3": 0.033,
+              "1_5": 0.189,
+              "0_10": 0.154,
+              "0_100": 0.262
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 393,
+            "calib_size": 79,
+            "n_boot": 1000,
+            "sel_spearman": 0.35002597587082807,
+            "canon_spearman": 0.3476294619609274,
+            "delta_spearman": 0.002396513909900644,
+            "sel_kendall": 0.27630657796260777,
+            "canon_kendall": 0.2853112338654007,
+            "sel_spearman_std": 0.03536197303554112,
+            "test_oracle_regret": 0.0318178116108493,
+            "pick_canonical_rate": 0.163,
+            "pick_distribution": {
+              "0_1": 0.471,
+              "1_3": 0.004,
+              "1_5": 0.163,
+              "0_10": 0.109,
+              "0_100": 0.253
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 393,
+            "calib_size": 118,
+            "n_boot": 1000,
+            "sel_spearman": 0.3534110556961266,
+            "canon_spearman": 0.3471725197791138,
+            "delta_spearman": 0.0062385359170127885,
+            "sel_kendall": 0.2804182731528343,
+            "canon_kendall": 0.2850620178048669,
+            "sel_spearman_std": 0.038621507274641816,
+            "test_oracle_regret": 0.028956376975632876,
+            "pick_canonical_rate": 0.171,
+            "pick_distribution": {
+              "0_1": 0.577,
+              "1_3": 0.002,
+              "1_5": 0.171,
+              "0_10": 0.063,
+              "0_100": 0.187
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 393,
+            "calib_size": 157,
+            "n_boot": 1000,
+            "sel_spearman": 0.3561152434698588,
+            "canon_spearman": 0.34764839427019195,
+            "delta_spearman": 0.008466849199666837,
+            "sel_kendall": 0.28271846698014685,
+            "canon_kendall": 0.28557833798880017,
+            "sel_spearman_std": 0.04443723437241253,
+            "test_oracle_regret": 0.02894375416510345,
+            "pick_canonical_rate": 0.132,
+            "pick_distribution": {
+              "0_1": 0.644,
+              "1_3": 0.0,
+              "1_5": 0.132,
+              "0_10": 0.033,
+              "0_100": 0.191
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 393,
+            "calib_size": 196,
+            "n_boot": 1000,
+            "sel_spearman": 0.35590326076662937,
+            "canon_spearman": 0.34803502389342655,
+            "delta_spearman": 0.007868236873202816,
+            "sel_kendall": 0.2821960266068311,
+            "canon_kendall": 0.28577139740598206,
+            "sel_spearman_std": 0.052552244749061894,
+            "test_oracle_regret": 0.03150954209601142,
+            "pick_canonical_rate": 0.1,
+            "pick_distribution": {
+              "0_1": 0.68,
+              "1_3": 0.0,
+              "1_5": 0.1,
+              "0_10": 0.029,
+              "0_100": 0.191
+            },
+            "canonical_range": "1_5"
+          }
+        },
+        "rel": {
+          "0.1": {
+            "n_units": 397,
+            "calib_size": 40,
+            "n_boot": 1000,
+            "sel_spearman": 0.45305325039938016,
+            "canon_spearman": 0.38977717546091784,
+            "delta_spearman": 0.06327607493846232,
+            "sel_kendall": 0.3536597587993855,
+            "canon_kendall": 0.31787791829236467,
+            "sel_spearman_std": 0.03731447970709688,
+            "test_oracle_regret": 0.03673359615268724,
+            "pick_canonical_rate": 0.072,
+            "pick_distribution": {
+              "0_1": 0.12,
+              "1_3": 0.171,
+              "1_5": 0.072,
+              "0_10": 0.13,
+              "0_100": 0.507
+            },
+            "canonical_range": "1_5"
+          },
+          "0.2": {
+            "n_units": 397,
+            "calib_size": 79,
+            "n_boot": 1000,
+            "sel_spearman": 0.45805978898455363,
+            "canon_spearman": 0.38884583617542773,
+            "delta_spearman": 0.0692139528091259,
+            "sel_kendall": 0.35500704458619314,
+            "canon_kendall": 0.3171422456201416,
+            "sel_spearman_std": 0.0390956970499921,
+            "test_oracle_regret": 0.029951161273986757,
+            "pick_canonical_rate": 0.029,
+            "pick_distribution": {
+              "0_1": 0.087,
+              "1_3": 0.136,
+              "1_5": 0.029,
+              "0_10": 0.128,
+              "0_100": 0.62
+            },
+            "canonical_range": "1_5"
+          },
+          "0.3": {
+            "n_units": 397,
+            "calib_size": 119,
+            "n_boot": 1000,
+            "sel_spearman": 0.4684704034900622,
+            "canon_spearman": 0.39010954152640875,
+            "delta_spearman": 0.07836086196365344,
+            "sel_kendall": 0.36065583436253884,
+            "canon_kendall": 0.318318943632143,
+            "sel_spearman_std": 0.040816165556346054,
+            "test_oracle_regret": 0.02035819988726467,
+            "pick_canonical_rate": 0.011,
+            "pick_distribution": {
+              "0_1": 0.039,
+              "1_3": 0.083,
+              "1_5": 0.011,
+              "0_10": 0.105,
+              "0_100": 0.762
+            },
+            "canonical_range": "1_5"
+          },
+          "0.4": {
+            "n_units": 397,
+            "calib_size": 159,
+            "n_boot": 1000,
+            "sel_spearman": 0.47381639195098224,
+            "canon_spearman": 0.3881886280279399,
+            "delta_spearman": 0.08562776392304233,
+            "sel_kendall": 0.36342869574558867,
+            "canon_kendall": 0.3168360722057303,
+            "sel_spearman_std": 0.04225708899383383,
+            "test_oracle_regret": 0.014821861694071474,
+            "pick_canonical_rate": 0.005,
+            "pick_distribution": {
+              "0_1": 0.019,
+              "1_3": 0.054,
+              "1_5": 0.005,
+              "0_10": 0.074,
+              "0_100": 0.848
+            },
+            "canonical_range": "1_5"
+          },
+          "0.5": {
+            "n_units": 397,
+            "calib_size": 198,
+            "n_boot": 1000,
+            "sel_spearman": 0.479400368138501,
+            "canon_spearman": 0.3882421489288448,
+            "delta_spearman": 0.09115821920965622,
+            "sel_kendall": 0.36681400028445676,
+            "canon_kendall": 0.31707151677026807,
+            "sel_spearman_std": 0.045302252395024334,
+            "test_oracle_regret": 0.00925880188788892,
+            "pick_canonical_rate": 0.0,
+            "pick_distribution": {
+              "0_1": 0.012,
+              "1_3": 0.027,
+              "1_5": 0.0,
+              "0_10": 0.034,
+              "0_100": 0.927
+            },
+            "canonical_range": "1_5"
+          }
+        }
+      },
+      "average": {
+        "0.1": {
+          "sel_spearman": 0.32020594290982507,
+          "canon_spearman": 0.3069677275323841,
+          "delta_spearman": 0.013238215377440965,
+          "test_oracle_regret": 0.033774806842855956,
+          "pick_canonical_rate": 0.16124999999999998
+        },
+        "0.2": {
+          "sel_spearman": 0.3223632297134074,
+          "canon_spearman": 0.30691781911472804,
+          "delta_spearman": 0.015445410598679377,
+          "test_oracle_regret": 0.032580264228937,
+          "pick_canonical_rate": 0.139
+        },
+        "0.3": {
+          "sel_spearman": 0.3248273270548592,
+          "canon_spearman": 0.30666022470982945,
+          "delta_spearman": 0.018167102345029773,
+          "test_oracle_regret": 0.03155968472588166,
+          "pick_canonical_rate": 0.13675
+        },
+        "0.4": {
+          "sel_spearman": 0.32634518042280003,
+          "canon_spearman": 0.3066733760266974,
+          "delta_spearman": 0.01967180439610261,
+          "test_oracle_regret": 0.03264968042235515,
+          "pick_canonical_rate": 0.11675
+        },
+        "0.5": {
+          "sel_spearman": 0.3281598516240559,
+          "canon_spearman": 0.3072273082829667,
+          "delta_spearman": 0.020932543341089238,
+          "test_oracle_regret": 0.033823909208108155,
+          "pick_canonical_rate": 0.09725
+        }
+      }
+    }
+  },
+  "overall": {
+    "0.1": {
+      "sel_spearman": 0.3933353600828058,
+      "canon_spearman": 0.36080924942088055,
+      "delta_spearman": 0.032526110661925234
+    },
+    "0.2": {
+      "sel_spearman": 0.3969741327934252,
+      "canon_spearman": 0.3610027020530301,
+      "delta_spearman": 0.035971430740395105
+    },
+    "0.3": {
+      "sel_spearman": 0.3980080031046278,
+      "canon_spearman": 0.3605537388425031,
+      "delta_spearman": 0.037454264262124726
+    },
+    "0.4": {
+      "sel_spearman": 0.39974792983147,
+      "canon_spearman": 0.3606427519816714,
+      "delta_spearman": 0.03910517784979861
+    },
+    "0.5": {
+      "sel_spearman": 0.4018777579891224,
+      "canon_spearman": 0.3613179444078983,
+      "delta_spearman": 0.040559813581224125
+    }
+  }
+}
