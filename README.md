@@ -47,7 +47,11 @@ python meta_eval/compute_canonical_vs_best.py       # -> reports/canonical_vs_be
 
 python figures/compute_cross_range_correlations.py  # -> reports/cross_range_correlation_summary.csv  (data for Figure 3)
 
-python flips/compute_flips_cohens_d.py              # -> reports/cohens_d_instability.csv            bilateral flips + Cohen's-d magnitude swings (Table 1)
+python flips/compute_flips_cohens_d.py              # -> reports/cohens_d_instability.csv            bilateral flips + Cohen's-d magnitude swings (Table 1)  
+
+python likert/compute_likert_correlations.py        # -> reports/likert_correlations.csv             Likert scale correlations
+
+python likert/compute_likert_tables.py              # -> reports/likert_table_values.csv (Table 2) + reports/likert_peak_values.csv (Table 3)
 
 python range_selection/scale_selection.py           # -> reports/scale_selection/scale_selection_results.json (Table 4)
 
@@ -79,10 +83,12 @@ See `BigGen-Bench/README.md` for more.
 | Directory | Description |
 |:----------|:------------|
 | `scores/` | Raw judge scores (zipped), along with the unzip script. |
+| `data/` | Human annotations for the datasets used (SummEval, Newsroom, Topical-Chat, WP-A, BigGen-Bench).  |
 | `reports/` | Saved CSV files used to generate the tables and figures. |
 | `figures/` | Figure-generation scripts and their corresponding outputs. |
 | `meta_eval/` | Meta-evaluation code for building the correlation tables from the judge scores. |
 | `flips/` | Code for bilateral flips and effect-size swing analyses. |
+| `likert/` | Likert-scale meta-evaluation|
 | `range_selection/` | Implementation of our range selection protocol. |
 | `non_oracle_gains/` | Analysis of gains when the scoring range is selected using a small labeled (calibration) set. |
 | `temperature_effects/` | Results and analysis of the same judges evaluated at different temperatures. |
@@ -97,6 +103,9 @@ See `BigGen-Bench/README.md` for more.
 | `canonical_vs_best.csv` | Per judge and dataset: the canonical range's correlation vs the best standard range's correlation (Spearman and Kendall). Used for Table A.1. |
 | `cross_range_correlation_summary.csv` | Per-instance-averaged Spearman/Pearson agreement between every pair of the 5 standard ranges, for the 3 frontier judges. Used for Figure 3. |
 | `cohens_d_instability.csv` | Per judge and dataset: the max and mean Cohen's-d magnitude swing across the 5 standard ranges, and the number of bilateral flips. Used for Table 1. |
+| `likert_correlations.csv` | Spearman/Kendall between judge Likert scores and human scores, per judge/dataset/metric/scale (3/5/7-pt). |
+| `likert_table_values.csv` | Per judge and dataset: Likert Spearman/Kendall at 3/5/7-pt, plus the metric-averaged min/max continuous-range Spearman/Kendall. Used for Table 2. |
+| `likert_peak_values.csv` | Per judge and dataset: peak Likert Spearman (over scales) and its change vs the canonical continuous range, plus a per-judge overall row. Used for Table 3. |
 | `scale_selection.csv` | Per judge/dataset/metric at 20% calibration: the majority-vote selected range, its full-data pairwise agreement, the best−worst agreement spread, the regret, and the agreement gain over the canonical range for standard ranges. Used for Table 4. |
 | `scale_selection_ablation.csv` | Per judge and dataset: selection regret (in percentage points) at 5/10/20/50% calibration fractions. Used for Table 5. |
 | `dist_stats.csv` | Per judge/dataset/metric/range score-distribution statistics (e.g. normalized mean) |
