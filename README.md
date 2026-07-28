@@ -4,7 +4,7 @@ This repo has the LLM-judge scores from our paper along with the evaluation pipe
 
 ## 1. Install
 
-You need Python 3.9 or newer. Install the libraries the code uses:
+Please use Python 3.9 or newer. Run:
 
 ```bash
 pip install -r requirements.txt
@@ -30,7 +30,7 @@ python range_selection/compute_scale_selection_tables.py
 
 ## 3. Results from raw scores
 
-First unzip the scores (about 1.3 GB zipped; a few GB once unzipped):
+First, unzip the scores (about 1.3 GB zipped; a few GB once unzipped):
 
 ```bash
 cd scores && bash extract_all.sh && cd ..
@@ -39,31 +39,31 @@ cd scores && bash extract_all.sh && cd ..
 Then:
 
 ```bash
-python meta_eval/compute_standard_correlations.py   # -> reports/standard_range_correlations.csv    Pearson/Spearman/Kendall, 11 judges x 5 standard ranges  (Table A.2)
+python meta_eval/compute_standard_correlations.py   # reports/standard_range_correlations.csv    
 
-python meta_eval/compute_correlations.py            # -> reports/all_range_correlations.csv          Spearman/Kendall, 8 judges x 20 ranges  (the per-judge 20-range appendix tables)
+python meta_eval/compute_correlations.py            # reports/all_range_correlations.csv          
 
-python meta_eval/compute_canonical_vs_best.py       # -> reports/canonical_vs_best.csv               canonical vs best standard range per judge/dataset  
+python meta_eval/compute_canonical_vs_best.py       # reports/canonical_vs_best.csv               
 
-python figures/compute_cross_range_correlations.py  # -> reports/cross_range_correlation_summary.csv  (data for Figure 3)
+python figures/compute_cross_range_correlations.py  # reports/cross_range_correlation_summary.csv  
 
-python flips/compute_flips_cohens_d.py              # -> reports/cohens_d_instability.csv            bilateral flips + Cohen's-d magnitude swings (Table 1)  
+python flips/compute_flips_cohens_d.py              # reports/cohens_d_instability.csv            
 
-python likert/compute_likert_correlations.py        # -> reports/likert_correlations.csv             Likert scale correlations
+python likert/compute_likert_correlations.py        # reports/likert_correlations.csv             
 
-python likert/compute_likert_tables.py              # -> reports/likert_table_values.csv (Table 2) + reports/likert_peak_values.csv (Table 3)
+python likert/compute_likert_tables.py              # reports/likert_table_values.csv + reports/likert_peak_values.csv 
 
-python range_selection/scale_selection.py           # -> reports/scale_selection/scale_selection_results.json (Table 4)
+python range_selection/scale_selection.py           # reports/scale_selection/scale_selection_results.json 
 
-python range_selection/scale_selection_ablation.py  # -> reports/scale_selection/scale_selection_ablation_results.json   calibration-size ablation  (Table 5)
+python range_selection/scale_selection_ablation.py  # reports/scale_selection/scale_selection_ablation_results.json    
 
-python range_selection/compute_scale_selection_tables.py   # -> reports/scale_selection.csv (Table 4) + reports/scale_selection_ablation.csv (Table 5)
+python range_selection/compute_scale_selection_tables.py   # reports/scale_selection.csv + reports/scale_selection_ablation.csv 
 
-bash   non_oracle_gains/run_all_judges.sh            # -> reports/non_oracle_gains/per_judge/<judge>.{json,csv}   calibration-only range-selection sweep, 11 judges 
+bash   non_oracle_gains/run_all_judges.sh            # reports/non_oracle_gains/per_judge/<judge>.{json,csv}   
 
-python non_oracle_gains/build_summary_tables.py      # -> reports/non_oracle_gains/calibration_gains_{by_metric,by_dataset,overall}.csv
+python non_oracle_gains/build_summary_tables.py      # reports/non_oracle_gains/calibration_gains_{by_metric,by_dataset,overall}.csv
 
-python temperature_effects/compute_correlations.py   # -> reports/temperature_effects/<variant>/<dataset>/correlations.csv   temperature-0 + default-temperature judge variants  
+python temperature_effects/compute_correlations.py   # reports/temperature_effects/<variant>/<dataset>/correlations.csv   
 ```
 
 The figure commands from step 2 can be run on these results.
@@ -110,4 +110,4 @@ See `BigGen-Bench/README.md` for more.
 | `scale_selection_ablation.csv` | Per judge and dataset: selection regret (in percentage points) at 5/10/20/50% calibration fractions. Used for Table 5. |
 | `dist_stats.csv` | Per judge/dataset/metric/range score-distribution statistics (e.g. normalized mean) |
 | `non_oracle_gains/calibration_gains_by_metric.csv` | Per judge/dataset/metric and calibration fraction (10/20/30/40/50%): held-out-test Spearman correlation (with human scores) of the calibration-selected range vs the canonical range, their difference, and the test-set oracle regret. |
-| `non_oracle_gains/calibration_gains_by_dataset.csv` / `_overall.csv` | The same quantities, averaged over metrics (per dataset) and over datasets (overall). |
+| `non_oracle_gains/calibration_gains_by_dataset.csv` / `_overall.csv` | The same quantities as above, averaged over metrics (per dataset) and over datasets (overall). |
